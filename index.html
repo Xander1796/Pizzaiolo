@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script type="module" src="javascript.js" defer></script>
+    <title>Pizzaiolo</title>
+</head> 
+
+<body>
+
+    <nav>
+        <div class="website-logo">Pizza<span class="logo-colored-word">iolo</span></div>
+        <div class="nav-links-container">
+            <ul>
+                <li class="link-container"><a href="#home" class="nav-link nav-link1" data-link-number="0">Home</a></li>
+                <li class="link-container"><a href="#menu" class="nav-link" data-link-number="1">Menu</a></li>
+                <li class="link-container"><a href="#about" class="nav-link" data-link-number="2">About</a></li>
+            </ul>
+        </div>
+        <div class="color-switcher-container">
+            <i class="fas fa-cloud-moon dark-mode"></i>
+            <div class="color-switcher"></div>
+            <i class="fas fa-cloud-sun white-mode color-mode-active"></i>
+        </div>
+
+        <i class="fas fa-bars"></i>
+        <div class="shopping-cart">
+            <i class="fas fa-shopping-basket shopping-cart-icon"></i>
+            <span class="shopping-cart-quantity">0</span>
+            <div class="shopping-cart-hover">
+              <div class="shopping-cart-hover-message"><h4>Your cart is empty</h4></div>
+              <div class="shopping-cart-hover-see-menu"><a href="#menu">See Our Menu &darr;</a></div>
+            </div>
+            <div class="shopping-cart-hover-items-container"></div>
+        </div>
+        <div class="items-to-cart-confirmation-container"></div>
+    </nav>
+
+    <header id="home" class="section-observe" data-section-number="0">
+        <div class="header-cta">
+            <h1 class="header-cta-h1">We make the best pizza in town.</h1>
+            <div class="itestjust"></div>
+            <p class="header-cta-p">Special sauce, fermented dough and authentic ingredients are the secrets to our delicious pizza</p>
+            <a class="cta" href="#menu">Order now <span class="cta-arrow">&darr;</span></a>
+        </div>
+
+        <div class="header-cards-container">
+            <div class="header-card header-card1">
+                <div class="header-card-icon"><i class="fas fa-clock"></i></div>
+                <h2 class="h2-header-card">8:00 - 22:00</h2>
+                <p class="p-header-card">Open everyday for you</p>
+            </div>
+            <div class="header-card header-card2">
+                <div class="header-card-icon"><i class="fas fa-phone-volume"></i></div>
+                <h2 class="h2-header-card">+ (00 0) 00 000 000</h2>
+                <p class="p-header-card">For telephone orders</p>
+            </div>
+            <div class="header-card header-card3">
+                <div class="header-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h2 class="h2-header-card">Blvd. Victoria, 10</h2>
+                <p class="p-header-card">Here you can find us</p>
+            </div>
+        </div>
+
+        <div class="header-slide-image-container">
+            <div class="header-slide-buttons-container">
+                <div class="slide-button slide-button1 slide-button-active" data-name="slide1" data-number="0"></div>
+                <div class="slide-button slide-button2" data-name="slide2" data-number="1"></div>
+                <div class="slide-button slide-button3" data-name="slide3" data-number="2"></div>
+                <div class="slide-button slide-button-play-pause"  data-name="playpause"><i class="fas fa-pause"></i></div>
+            </div>
+            <img src="img/slide0.png" alt="" class="slide-image" data-name="slide">
+        </div>
+    </header>
+
+    <div class="section-title-wrapper">
+        <div class="menu-section-title"><p class="our-menu">OUR MENU</p></div>
+    </div>
+
+    <section class="menu-section section-observe" id="menu" data-section-number="1">
+
+        <div class="menu-buttons-container">
+            <div class="menu-button menu-button-active" data-number="0">Pizza</div>
+            <div class="menu-button" data-number="1">Pasta</div>
+            <div class="menu-button" data-number="2">Desserts</div>
+            <div class="menu-button" data-number="3">Drinks</div>
+        </div>
+        
+        <div class="menu-items-container">
+            <!-- <div class="menu-item-container">
+                <div class="all-menu-items">
+                    <div class="menu-item-image-container">
+                        <img src="img/slide0.png" alt="" class="menu-item-image">
+                    </div>
+                    <h3 class="menu-item-name">Lorem</h3>
+                    <p class="menu-item-ingredients">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, qui similique?</p>
+                    <div class="menu-price-and-shopping-cart">
+                        <span class="menu-price">5.99$</span>
+                        <div class="menu-shoppingCart">
+                            <span class="menu-remove-items"><i class="fas fa-minus"></i></span>
+                            <span class="menu-item-quantity"></span>
+                            <span class="menu-add-items"><i class="fas fa-plus"></i></span>
+                            <span class="menu-add-to-cart"><i class="fas fa-cart-arrow-down menu-add-to-cart-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>     -->
+        </div>
+
+    </section>
+
+    <div class="section-title-wrapper">
+        <div class="about-section-title"><p class="about-us">About Pizzaiolo</p></div>
+    </div>
+
+    <section class="about-section" id="about" data-section-number="2">
+
+        <div class="about-section-first-wrapper about-section-wrapper">
+            <div class="about-left-text-wrapper about-text-wrapper about-observed-element" data-number="0">
+                <h3 class="about-section-subheading">Since 1973</h3>
+                <h2 class="about-section-heading">It all started in 1973 with one little pizzeria</h2>
+                <p class="about-section-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vel nemo minus expedita at ducimus? Accusamus voluptate nisi libero consequatur obcaecati, reprehenderit, delectus, cupiditate facilis odio at voluptatum reiciendis.Temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt et animi explicabo veniam saepe earum ipsa deleniti officiis aliquam eius iste, atque, molestias maxime. Voluptas veniam quisquam voluptates eligendi iste!</p>
+            </div>
+            <div class="about-section-first-img about-observed-element" data-number="1"></div>    
+        </div>
+
+        <div class="about-section-second-wrapper about-section-wrapper">
+            <div class="about-section-second-img about-observed-element"  data-number="2"></div>    
+            <div class="about-right-text-wrapper about-text-wrapper about-observed-element" data-number="3">
+                <h3 class="about-section-subheading">Present on 5 continents</h3>
+                <h2 class="about-section-heading">Nowadays  there are 500 Pizzaiolo around the world</h2>
+                <p class="about-section-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vel nemo minus expedita at ducimus? Accusamus voluptate nisi libero consequatur obcaecati, reprehenderit, delectus, cupiditate facilis odio at voluptatum reiciendis.Temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt et animi explicabo veniam saepe earum ipsa deleniti officiis aliquam eius iste, atque, molestias maxime. Voluptas veniam quisquam voluptates eligendi iste!</p>
+            </div>
+        </div>
+
+        <div class="about-section-third-wrapper about-observed-element">
+            <h3 class="about-section-subheading">Milions of happy customers</h3>
+            <h2 class="about-section-heading">The perfect pizza doesn't exis...</h2>
+            <div class="about-section-cards-and-slider">
+                <div class="about-section-cards-wrapper">
+                    <div class="about-section-card" data-card-number="0">
+                        <div class="about-section-card-img-name">
+                            <div class="about-section-card-img-wrapper about-section-card-img-wrapper1">
+                                <img src="img/about-us/card-person-img/compressed/card1.jpg" alt="">
+                            </div>
+                            <div class="about-section-card-name"><i class="fab fa-instagram"></i> Brent Glass</div>
+                        </div>
+                        <div class="about-section-card-quote-wrapper">
+                            <i class="fas fa-quote-left quote-left"></i>
+                            <p>Now that was a delicious pizza.Fast delivery, hot and cheesy pizza.</p>
+                            <div class="quote-right-wrapper">
+                                <i class="fas fa-quote-right quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="about-section-card" data-card-number="1">
+                        <div class="about-section-card-img-name">
+                            <div class="about-section-card-img-wrapper about-section-card-img-wrapper2">
+                                <img src="img/about-us/card-person-img/compressed/card3.jpg" alt="">
+                            </div>
+                            <div class="about-section-card-name"><i class="fab fa-facebook"></i> Elena Wall</div>
+                        </div>
+                        <div class="about-section-card-quote-wrapper">
+                            <i class="fas fa-quote-left quote-left"></i>
+                            <p>I order from them every other day.I 100% recommend, the standards are very high.</p>
+                            <div class="quote-right-wrapper">
+                                <i class="fas fa-quote-right quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="about-section-card" data-card-number="2">
+                        <div class="about-section-card-img-name">
+                            <div class="about-section-card-img-wrapper about-section-card-img-wrapper3">
+                                <img src="img/about-us/card-person-img/compressed/card2.jpg" alt="">
+                            </div>
+                            <div class="about-section-card-name"><i class="fab fa-instagram"></i>  Jeremiah Norris</div>
+                        </div>
+                        <div class="about-section-card-quote-wrapper">
+                            <i class="fas fa-quote-left quote-left"></i>
+                            <p>The best pizza that i have tasted in a while, and the desserts were exceptional.</p>
+                            <div class="quote-right-wrapper">
+                                <i class="fas fa-quote-right quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="about-section-card" data-card-number="3">
+                        <div class="about-section-card-img-name">
+                            <div class="about-section-card-img-wrapper about-section-card-img-wrapper4">
+                                <img src="img/about-us/card-person-img/compressed/card4.jpg" alt="">
+                            </div>
+                            <div class="about-section-card-name"><i class="fab fa-twitter"></i> Denise Gonzalez</div>
+                        </div>
+                        <div class="about-section-card-quote-wrapper">
+                            <i class="fas fa-quote-left quote-left"></i>
+                            <p>Extraordinary food, kind and sympathetic employees, very nice location.Perfect.</p>
+                            <div class="quote-right-wrapper">
+                                <i class="fas fa-quote-right quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="about-section-card">
+                        <div class="about-section-card-name">What our customers have to say</div>
+                        <i class="fas fa-arrow-circle-left about-arrow-left"></i>
+                        <i class="fas fa-arrow-circle-up about-arrow-up"></i>
+                        <div class="about-follow">
+                            <h3>Follow us on:</h3>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="about-section-cards-slider">
+                    <div class="about-dot1 about-dot about-dot-active" data-card-dot-number="0"></div>
+                    <div class="about-dot2 about-dot" data-card-dot-number="1"></div>
+                    <div class="about-dot3 about-dot" data-card-dot-number="2"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="website-logo">Pizza<span class="logo-colored-word">iolo</span></div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-clock"></i> Open hours: 08 - 22:00</p>
+                    <p><i class="fas fa-phone-volume"></i> Delivery: + (00 0) 00 000 000</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Blvd. Victoria, 10  Bucharest</p>
+                </div>
+                <div class="footer-follow">
+                    <h3>Follow us on:</h3>
+                    <div class="footer-follow-icons">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+        </div>
+        <div class="footer-bottom">
+            <h3>Made by <span>Alexandru Florian</span> as a project.</h3>
+        </div>
+
+    </footer>
+
+    <div class="shopping-cart-popup-overlay">
+        <div class="shopping-cart-popup">
+            <div class="cart-go-back"><i class="fas fa-arrow-circle-left go-back-arrow"></i><span class="go-back">Go back</span></div>
+            <div class="shopping-cart-popup-left-and-right">
+                <div class="shopping-cart-popup-left">
+                    <h2 class="shopping-cart-popup-left-title">Your products</h2>
+                    <div class="shopping-cart-popup-items">
+                        <!-- <div class="shopping-cart-popup-item">
+                            <div class="popup-item-img-container">
+                                <img src="img/pizzaImg/compressed/slide5.png" alt="" class="popup-item-img">
+                            </div>
+                            <div class="shopping-cart-popup-item-rs">
+                                <div class="cart-popup-item-rs-name">Polo</div>
+                                <div class="cart-popup-item-rs-bottom">
+                                    <i class="fas fa-minus-circle cart-popup-item-minus"></i>
+                                    <span class="cart-popup-item-quantity">1</span>
+                                    <i class="fas fa-plus-circle cart-popup-item-plus"></i>
+                                    <i class="fas fa-trash cart-popup-item-trash"></i>
+                                    <span class="cart-popup-item-price">5.99 $</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="shopping-cart-popup-right">
+                    <h2 class="shopping-cart-popup-right-title">Order Summary</h2>
+                    <div class="delivery-information-container">
+                        <div class="delivery-cost-container">
+                            <div class="delivery-cost-container-left">
+                                <i class="fas fa-shipping-fast"></i>
+                                <p class="delivery-cost-name">Delivery cost</p>
+                            </div>
+                            <span class="cost-of-delivery">FREE</span>    
+                        </div>
+                        <div class="delivery-information-total-cost">
+                            <div class="delivery-information-total-cost-left">
+                                <i class="fas fa-money-check-alt"></i>
+                                <p class="delivery-total-cost-name">TOTAL</p>    
+                            </div>
+                            <span class="delivery-information-products-total-cost">29.99 $</span>
+                        </div>
+                    </div>
+                    <button class="shopping-cart-popup-next">Next Step &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#home"><i class="fas fa-arrow-circle-up go-up-arrow"></i></a>
+</body>
+
+</html>
