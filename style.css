@@ -1284,7 +1284,6 @@ header {
  }
 
  .footer-bottom a {
-   text-decoration: none;
    font-weight: 700;
    color: var(--text-color-white-mode-87);
  }
