@@ -67,13 +67,23 @@ colorSwitcherContainer.addEventListener('click' , function() {
 })
 
 // BURGER MENU
-menuIcon.addEventListener('click', function() {
-   menuContainer.classList.toggle('show-menu');
-   menuContainer.classList.toggle('nav-links-container-animation');
-   nav.classList.toggle('nav-border-change');
-   linkContainer.forEach((link, i) => {
-     link.style.animation = `link-container-animation .3s ease ${i * .15}s forwards`
-   })
+nav.addEventListener('click', function(e) {
+  if(e.target.classList.contains('fa-bars')) {
+    menuContainer.classList.toggle('show-menu');
+    menuContainer.classList.toggle('nav-links-container-animation');
+    nav.classList.toggle('nav-border-change');
+    linkContainer.forEach((link, i) => {
+      link.style.animation = `link-container-animation .3s ease ${i * .15}s forwards`
+    });
+  };
+
+  if(e.target.classList.contains('nav-link') && menuContainer.classList.contains('show-menu')) {
+    menuContainer.classList.remove(
+      "show-menu",
+      "nav-links-container-animation"
+    );
+    nav.classList.remove("nav-border-change");
+  };
 });
 
 // INTERSECTION OBSERVER FOR SECTIONS

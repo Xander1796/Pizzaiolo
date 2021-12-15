@@ -464,53 +464,17 @@ header {
 
 .fa-map-marker-alt {
   display: inline-block;
-  animation: location-animation 1s ease-out infinite alternate;
   transform: translateY(0);
 }
 
 .fa-phone-volume {
   display: inline-block;
-  animation: telephone-animation 1s ease-out infinite alternate;
   transform: translateX(0) rotateX(0);
 }
 
 .fa-clock {
   display: inline-block;
-  animation: clock-animation ease 2s infinite;
   transform: rotate(0deg);
-}
-
-@keyframes location-animation {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-0.5rem);
-  }
-}
-
-@keyframes telephone-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(15deg);
-  }
-
-  100% {
-    transform: rotate(-15deg);
-  }
-}
-
-@keyframes clock-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .h2-header-card {
@@ -1164,22 +1128,16 @@ header {
   margin-right: 1.3rem;
 }
 
-.quote-left, .quote-right {
+.quote-left {
   background: var(--background-elements-linear);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .quote-left {
   margin-bottom: .8rem;
-}
-
-.quote-right-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: .8rem;
 }
 
 .about-section-cards-slider {
@@ -1684,7 +1642,7 @@ header {
     font-size: 1.5rem;
   }
 
-  .quote-right, .quote-left {
+  .quote-left {
     font-size: 1.8rem;
   }
 
