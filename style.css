@@ -1533,6 +1533,25 @@ header {
 
 /* ////////////////////// MEDIA QUERIES ///////////////////////// */
 
+@media (min-width: 2000px) {
+  html {
+    font-size: 85%;
+  }
+
+  header {
+    height: 70vh;
+  }
+
+  .header-cards-container {
+    gap: 2rem;
+  }
+
+  .header-card {
+    flex: 1;
+    margin: 0;
+  }
+}
+
 @media (max-width: 1510px) {
   header {
     grid-template-areas:
